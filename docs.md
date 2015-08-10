@@ -27,6 +27,8 @@ The important decision to be taken here is to build your own electronics or buy 
 
 People who are good at arduino programming may develop their own firmwares and can build their own electronics.
 
+Please start with the main parts of the system. Below you will find short descriptions of the main building blocks of the controller system.
+
 ### Electronics
 
 * Front Panel LCD
@@ -35,8 +37,7 @@ This board is an arduino compatible board which have LCD and buttons. It will co
 
 * Motion Controller
 
-The Motion contrller is also an arduino board which handles the G-code. GRBL g-code interpreter will be used as motion controller.
-
+The Motion controller is also an arduino board which handles the G-code commands coming through USB. GRBL g-code interpreter will do the Job. Homing and Moving the axis to the desired coordinate with desired velocity and acelaration is important. The industry standart g-code blocks will define the machine spesific motions. Here the user may need to tweek some code blocks for his spesific need of motion. 3D printers mostly the resin based ones repetes the motion for every layer and the image is projected on the resin surface to cure it. This cycle is mostly repated hundereds of time. It is not so hard to define this kind of motion. We will talk on this issue in the following sections. 
 
 ### Software
 
