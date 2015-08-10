@@ -31,14 +31,37 @@ Please start with the main parts of the system. Below you will find short descri
 
 ### Electronics
 
-* Front Panel LCD
+* Front Panel LCD Hardware
 
 This board is an arduino compatible board which have LCD and buttons. It will comunicate with RPi via USB. It is a serial communication. The maestro python code running on RPi will display information with this board to the user of the machine something like **"Printing Layer 23 of 850"**  The board will also send button pressed events to RPi. 
 
-* Motion Controller
+* Motion Controller Hardware
 
 The Motion controller is also an arduino board which handles the G-code commands coming through USB. GRBL g-code interpreter will do the Job. Homing and Moving the axis to the desired coordinate with desired velocity and acelaration is important. The industry standart g-code blocks will define the machine spesific motions. Here the user may need to tweek some code blocks for his spesific need of motion. 3D printers mostly the resin based ones repetes the motion for every layer and the image is projected on the resin surface to cure it. This cycle is mostly repated hundereds of time. It is not so hard to define this kind of motion. We will talk on this issue in the following sections. 
 
+* Raspberry Pi 2
+
+This little computer is the heard of the system. It will help us alot. You will not need a host pc during printing process. As you know it takes hours to print a 3d object. You may have more than one 3d printer working simultanously. It is great to use your 3d printer by itself. You will only plug your USB flash disk which contains the neccesary files. Thats it! printer will do its job for hours without need of a PC.
+
 ### Software
 
-* Raspbery Pi
+* Raspbery Pi Software
+
+I prefer to develop main code in Python. Rpi and Python is a nice conbination on a Linux system. This pice of code will
+  
+  * Read image files and Cycle File from USB Flash Drive
+  * Display images via HDMI
+  * Send motion commands to Motion Controller
+  * Comunicate with Front Panel LCD Board.
+  
+* Front Panel LCD Board Software
+
+This Board has an embeded arduino code which listen for the buttons and display information to the Front Panel LCD.
+
+* Motion Controller Software
+
+This is [grbl][https://github.com/grbl/grbl] motion software which is written in highly optimized C utilizing every clever feature of the AVR-chips to achieve precise timing and asynchronous operation. It is able to maintain up to 30kHz of stable, jitter free control pulses. It is developed for CNC systems but it fits great for 3D printing motion issues.
+
+
+
+
