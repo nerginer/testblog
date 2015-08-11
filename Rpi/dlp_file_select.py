@@ -5,14 +5,14 @@ from os import listdir
 from os.path import isfile, join
 
 #filepath
-mypath = "c://t1"
+mypath = "/Users/gnexlab_imac/code/dlp_raspi/testblog/testblog/Rpi"
 
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath,f))]
 index = 0 #file array index
 
 #filepath end
 
-ser = serial.Serial("COM3", 115200)
+ser = serial.Serial("/dev/cu.usbmodem1441", 115200)
 if not ser.isOpen():
         ser.open()
 

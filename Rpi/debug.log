@@ -92,3 +92,185 @@ INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=741363
 DEBUG:root:GrblPort: /dev/cu.usbmodem1421
 INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
 DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+WARNING:root:Cannot open port: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+WARNING:root:Cannot open port: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+WARNING:root:Cannot open port: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
+INFO:root:Starting SerialportList
+INFO:root:['/dev/cu.Bluetooth-Incoming-Port', 'n/a', 'n/a']
+INFO:root:['/dev/cu.Bluetooth-Modem', 'n/a', 'n/a']
+INFO:root:['/dev/cu.usbmodem1421', 'Arduino Uno', 'USB VID:PID=2341:1 SNR=7413633393235101F182']
+DEBUG:root:GrblPort: /dev/cu.usbmodem1421
+INFO:root:['/dev/cu.usbmodem1441', None, 'USB VID:PID=2341:42 SNR=9523834323435171E0A1']
+DEBUG:root:LCDPort: /dev/cu.usbmodem1441
