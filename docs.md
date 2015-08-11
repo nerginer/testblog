@@ -64,6 +64,59 @@ This Board has an embeded arduino code which listen for the buttons and display 
 
 This is [grbl](https://github.com/grbl/grbl) motion software which is written in highly optimized C utilizing every clever feature of the AVR-chips to achieve precise timing and asynchronous operation. It is able to maintain up to 30kHz of stable, jitter free control pulses. It is developed for CNC systems but it fits great for 3D printing motion issues.
 
+### Machine init
+
+After power on the RPi init with init.py inorder to check if the USB boards are connected. If it can not find the LCD Front Panel or Motion Controller System Halts. Please take a look at the below code to understand the init procedure.
+
+```Python
+import time
+import logging
+import serial
+import serial.tools.list_ports
+
+logging.basicConfig(filename="debug.log",level=logging.DEBUG)
+logging.info("Starting SerialportList")
+LCDPort=""
+GrblPort=""
+
+ports = list(serial.tools.list_ports.comports())
+for p in ports:
+        print p
+        logging.info(p)
+        if "Arduino" in p[1]:
+                try:
+                        ser = serial.Serial(p[0], 115200)
+                        if not ser.isOpen():
+                                ser.open()
+
+                      
+                        mychar = ser.readline()
+                        time.sleep(0.5)
+                        mychar = mychar+ser.readline()#get two line
+                        
+                        print mychar
+                        
+                        
+                        if  (mychar.find("LCD")<>-1):
+                                print "lcd bulundu"
+                                LCDPort = p[0]
+                                logging.debug("LCDPort: " + LCDPort)
+                                
+                        else:
+                            if  (mychar.find("Grbl")<>-1):
+                                print "Grbl bulundu"
+                                GrblPort = p[0]
+                                logging.debug("GrblPort: " + GrblPort)
+                except:
+                        print "Cannot open port: " + p[0]
+                        logging.warning("Cannot open port: " + p[0])
+
+
+print "LCDPort: " + LCDPort
+print "GrblPort: " + GrblPort
+
+```
+
 ### Usage
 
 Before printing with your 3D printer you have to design your 3d file and save it in \*.STL file format. After that there are a few more steps that you have to do with host software in your PC. One of it is Suport planing and the other is Plating. Support structures enable the printing of models with steep overhangs and cantilevered sections. Most 3D printing software will automatically place support structures based on the parameters you set. But it is a good idea to also look for a function in the software that will allow you to manually add or remove support structures to the model, so even if the automatic calculation does not work great you can fix it. On the other hand Plating is putting your models correctly on the building plate. People prefer to print as much models as possible. So you need to optimize your plate before printing. Anyway at the end you will have your final STL file. The next thing is slice it to 2D image files. Do not wory about it there are software that can handle it eaily. The most important parameter here is the Layer Height. As I said before I am not going deep on the prameters. To print your 3d model with this controller package you need a zip file containing the 2D image files for every layer. One more file in the zip is the Cycle File. I will tell you more soon about this file. Save your zip file into a USN flash disk. Now you are ready to print with **Gnexlab Resin Printer Controller**.
