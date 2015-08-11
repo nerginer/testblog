@@ -10,7 +10,7 @@ GrblPort=""
 
 ports = list(serial.tools.list_ports.comports())
 for p in ports:
-        print p
+        print p 
         logging.info(p)
         if "Arduino" in p[1]:
                 try:
