@@ -86,7 +86,7 @@ void serialEvent() {
       
       case 'c':
       case 'C':
-       lcd.clear();
+      lcd.clear();
       
       break;
       
@@ -104,8 +104,8 @@ void serialEvent() {
       case 'L':
       SerialReadNext();
       lcd.setCursor(0,0);
-      lcd.print("                ");
-      lcd.setCursor(0,0);
+      //lcd.print("                ");
+      //lcd.setCursor(0,0);
       lcd.print(String(str));
       break;
       
@@ -113,7 +113,18 @@ void serialEvent() {
       case 'M':
       SerialReadNext();
       lcd.setCursor(0,1);
-      lcd.print("                ");
+      //lcd.print("                ");
+      //lcd.setCursor(0,1);
+      lcd.print(String(str));
+      break;
+      
+      case 'x':     // 
+      case 'X':
+      SerialReadNext();
+      lcd.clear();
+      lcd.home();
+      lcd.print(String(str));
+      SerialReadNext();
       lcd.setCursor(0,1);
       lcd.print(String(str));
       break;

@@ -30,7 +30,7 @@ LEFT                    = 3
 
 configfile = 'lcdmenu.xml'
 # set DEBUG=1 for print debug statements
-DEBUG = 0
+DEBUG = 1
 DISPLAY_ROWS = 2
 DISPLAY_COLS = 16
 
@@ -54,18 +54,25 @@ def home():
     time.sleep(0.2)
 
 def lcdWriteFirstLine(str):
-    time.sleep(0.2)
+    time.sleep(0.1)
     ser.write('l '+str+'\n')
-    time.sleep(0.2)
+    time.sleep(0.1)
 
 def lcdWriteSecondLine(str):
-    time.sleep(0.2)
+    time.sleep(0.1)
     ser.write('m '+str+'\n')
+    time.sleep(0.1)
+
+def lcdMsg(str):
+    time.sleep(0.2)
+    ser.write('x '+str+'\n')
     time.sleep(0.2)
 
 
 def message(text):
     """ Send string to LCD. Newline wraps to second line"""
+   # lcdMsg(str(text))
+   # print text
     lines = str(text).split('\n')    # Split at newline(s)
     lcdWriteFirstLine(lines[0])
     lcdWriteSecondLine(lines[1])
