@@ -58,7 +58,7 @@ void setup(){
 }
  
 void loop(){
-   delay(50);
+   delay(10);
    lcd_key =   read_LCD_buttons();
    buttonState = lcd_key;
    
@@ -118,6 +118,10 @@ void serialEvent() {
       lcd.print(String(str));
       break;
       
+      case 'h':     // 
+      case 'H':
+      lcd.home();
+      break;
  
 
     }//switch

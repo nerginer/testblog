@@ -21,11 +21,11 @@ import time
 
 
 # Port expander input pin definitions
-SELECT                  = 0
-RIGHT                   = 1
+SELECT                  = 4
+RIGHT                   = 0
 DOWN                    = 2
-UP                      = 3
-LEFT                    = 4
+UP                      = 1
+LEFT                    = 3
 
 
 configfile = 'lcdmenu.xml'
@@ -38,30 +38,30 @@ DISPLAY_COLS = 16
 AUTO_OFF_LCD = 0
 
 
-ser = serial.Serial("Com8", 115200)
+ser = serial.Serial("/dev/cu.usbmodem1431", 115200)
 if not ser.isOpen():
     ser.open()
 
 def clear():
-    time.sleep(0.5)
+    time.sleep(0.2)
     ser.write('c\n')
-    time.sleep(0.5)
+    time.sleep(0.2)
 
 
 def home():
-    time.sleep(0.5)
+    time.sleep(0.2)
     ser.write('h\n')
-    time.sleep(0.5)
+    time.sleep(0.2)
 
 def lcdWriteFirstLine(str):
-    time.sleep(0.5)
+    time.sleep(0.2)
     ser.write('l '+str+'\n')
-    time.sleep(0.5)
+    time.sleep(0.2)
 
 def lcdWriteSecondLine(str):
-    time.sleep(0.5)
+    time.sleep(0.2)
     ser.write('m '+str+'\n')
-    time.sleep(0.5)
+    time.sleep(0.2)
 
 
 def message(text):
@@ -72,16 +72,9 @@ def message(text):
 
 
  #   def backlight(self, color):
- 
 
-# Read state of single button
-def buttonPressed(b):
-    mychar = ser.readline()
-    if (mychar.strip() == b):
-            if not (mychar==lastmychar):
-                return True
-    lastmychar = mychar
-    return False
+
+
 
     
 #lcd = gnexlabLCD(ser)
@@ -157,7 +150,7 @@ class Display:
                 str += '\n'
             if row < len(self.curFolder.items):
                 if row == self.curSelectedItem:
-                    cmd = '-'+self.curFolder.items[row].text
+                    cmd = '>'+self.curFolder.items[row].text
                     if len(cmd) < 16:
                         for row in range(len(cmd), 16):
                             cmd += ' '
@@ -180,7 +173,7 @@ class Display:
     def update(self, command):
         global currentLcd
         global lcdstart
-        lcd.backlight(currentLcd)
+       
         lcdstart = datetime.now()
         if DEBUG:
             print('do',command)
@@ -267,34 +260,55 @@ if DEBUG:
     print('start while')
 
 lcdstart = datetime.now()
+
+mychar = "6"
+lastmychar = "6"
+
+
 while 1:
-    if (buttonPressed(LEFT)):
-        display.update('l')
-        display.display()
-        sleep(0.25)
+        mychar = ser.readline()
 
-    if (buttonPressed(UP)):
-        display.update('u')
-        display.display()
-        sleep(0.25)
+        if (mychar.strip() =="3"):
+                if not (mychar==lastmychar):
+                    display.update('l')
+                    display.display()
+                    sleep(0.1)
+                        
+            
+        if (mychar.strip() =="0"):
+                if not (mychar==lastmychar):
+                    display.update('r')
+                    display.display()
+                    sleep(0.1)   
 
-    if (buttonPressed(DOWN)):
-        display.update('d')
-        display.display()
-        sleep(0.25)
 
-    if (buttonPressed(RIGHT)):
-        display.update('r')
-        display.display()
-        sleep(0.25)
+        if (mychar.strip() =="1"):
+                if not (mychar==lastmychar):
+                    display.update('u')
+                    display.display()
+                    sleep(0.1)
+                        
+            
+        if (mychar.strip() =="2"):
+                if not (mychar==lastmychar):
+                    display.update('d')
+                    display.display()
+                    sleep(0.1) 
+        
+        if (mychar.strip() =="4"):
+                if not (mychar==lastmychar):
+                    display.update('s')
+                    display.display()
+                    sleep(0.1) 
 
-    if (buttonPressed(SELECT)):
-        display.update('s')
-        display.display()
-        sleep(0.25)
 
-    if AUTO_OFF_LCD:
-        lcdtmp = lcdstart + timedelta(seconds=5)
-        if (datetime.now() > lcdtmp):
-            lcd.backlight(lcd.OFF)
+
+
+
+
+        lastmychar = mychar
+
+
+
+   
 
