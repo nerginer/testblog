@@ -15,6 +15,8 @@ import serial
 
 import time
 
+from os import listdir
+from os.path import isfile, join
 
 # ----------------------------------------------------------------------
 # Constants
@@ -38,7 +40,8 @@ DISPLAY_COLS = 16
 AUTO_OFF_LCD = 0
 
 
-ser = serial.Serial("/dev/cu.usbmodem1431", 115200)
+#ser = serial.Serial("/dev/cu.usbmodem1431", 115200)
+ser = serial.Serial("Com3", 115200)
 if not ser.isOpen():
     ser.open()
 
@@ -75,36 +78,48 @@ def message(text):
    # print text
     lines = str(text).split('\n')    # Split at newline(s)
     lcdWriteFirstLine(lines[0])
-    lcdWriteSecondLine(lines[1])
+    if (len(lines[1])==0):
+        lcdWriteSecondLine("                ")
+    else:
+        lcdWriteSecondLine(lines[1])
 
 
- #   def backlight(self, color):
+def PrintFromDisk():
+    if DEBUG:
+        print("in PrintFromDisk")
+        #filepath
+        mypath = "c:/t1"
 
+        onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath,f))]
+        index = 0 #file array index
+        clear()
+        lcdWriteFirstLine('Select File:')
+        time.sleep(0.5)
+        lcdWriteSecondLine(onlyfiles[0])
 
+        while 1:
+            mychar = ser.readline()
+            if (mychar.strip() =="1"):
+                    if not (mychar==lastmychar):
+                            if (index<len(onlyfiles)-1):
+                                    index=index+1
+                                    lcdWriteSecondLine(onlyfiles[index])
+                
+            if (mychar.strip() =="2"):
+                    if not (mychar==lastmychar):
+                            if (index>0):
+                                    index=index-1
+                                    lcdWriteSecondLine(onlyfiles[index])
+            if (mychar.strip() =="4"):
+                    if DEBUG:
+                        print("Selected: "+str(index+1))
+                    break
+            if (mychar.strip() =="0"):
+                    if DEBUG:
+                        print("Selected: "+str(index+1))
+                    break    
 
-
-    
-#lcd = gnexlabLCD(ser)
-# in case you add custom logic to lcd to check if it is connected (useful)
-#if lcd.connected == 0:
-#    quit()
-
-#lcd.begin(DISPLAY_ROWS,DISPLAY_COLS)
-#lcd.backlight(lcd.OFF)
-
-# commands
-
-
-
-
-
-    
-
-
-
-    
-    
-
+            lastmychar = mychar
 
 
 class Widget:
